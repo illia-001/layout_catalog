@@ -19,9 +19,9 @@
     letter-spacing: 0;
     color: $main-accent;
     line-height: $link-height;
+    transition: color $duration;
 
     &:hover {
-      transition: color, $duration;
       color: $blue-accent;
     }
 

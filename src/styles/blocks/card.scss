@@ -28,14 +28,16 @@
     color: $main-accent;
 
     margin-bottom: 4px;
+
+    transition: color $duration;
+
+    &:hover {
+      color: $card-hover;
+    }
   }
 
   &:hover {
     transform: scale(1.2);
-
-    .card__description {
-      color: $card-hover;
-    }
   }
 
   &__product-code {
@@ -91,10 +93,11 @@
     border-radius: $border-radius;
     border: $border solid $blue-accent;
 
+    transition:
+      color $duration,
+      background-color $duration;
+
     &:hover {
-      transition:
-        color $duration,
-        background-color $duration;
       color: $blue-accent;
       background-color: $background-color;
     }

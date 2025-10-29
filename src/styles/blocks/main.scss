@@ -4,7 +4,7 @@
   grid-template-columns: repeat(1, $card-width);
   grid-template-rows: repeat(1, $card-height);
   padding: $main-paddings;
-  gap: 46px 48px;
+  gap: 48px 46px;
 }
 
 @media (min-width: 488px) {
