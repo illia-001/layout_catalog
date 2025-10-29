@@ -1,13 +1,10 @@
 .main {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, $card-width);
+  grid-template-columns: repeat(1, $card-width);
+  grid-template-rows: repeat(1, $card-height);
   padding: $main-paddings;
   gap: 46px 48px;
-
-  &__content {
-    perspective: 100px;
-  }
 }
 
 @media (min-width: 488px) {

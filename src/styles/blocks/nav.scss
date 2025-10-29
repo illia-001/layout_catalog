@@ -21,6 +21,7 @@
     line-height: $link-height;
 
     &:hover {
+      transition: color, $duration;
       color: $blue-accent;
     }
 

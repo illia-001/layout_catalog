@@ -1,14 +1,13 @@
 .card {
   box-sizing: border-box;
-  transition: transform;
-  transition-duration: 150ms;
 
   width: $card-width;
   padding: $card-padding;
   background-color: $background-color;
-
   border: $border solid $border-color;
   border-radius: $border-radius;
+
+  transition: transform $duration;
 
   &__image {
     display: block;
@@ -20,7 +19,7 @@
     margin-bottom: 40px;
   }
 
-  &__description {
+  &__title {
     display: block;
 
     font-size: 12px;
@@ -32,9 +31,8 @@
   }
 
   &:hover {
-    transform: translateZ(20px);
-    transition-duration: 200ms;
-    
+    transform: scale(1.2);
+
     .card__description {
       color: $card-hover;
     }
@@ -87,13 +85,17 @@
     margin: 0;
     padding-block: 12px;
 
+    width: 166px;
+    height: 40px;
     background-color: $blue-accent;
     border-radius: $border-radius;
+    border: $border solid $blue-accent;
 
     &:hover {
+      transition:
+        color $duration,
+        background-color $duration;
       color: $blue-accent;
-
-      border: $border solid $blue-accent;
       background-color: $background-color;
     }
   }
